@@ -2,3 +2,5 @@ django==1.10.7
 django-crispy_forms==1.6.0
 gevent>=0.13.8
 jinja2>=2.8
+requests==2.27.1
+pip==20.3.4
