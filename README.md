@@ -11,11 +11,12 @@ YouPBX 是一个强大 FreeSwitch (电话软交换系统) 的管理GUI系统，�
 2. cd YouPBX安装依赖包
 
    #配置pip
-   cat ~/.pip/pip.conf 
-   [global]
-   index-url = http://mirrors.aliyun.com/pypi/simple/
-   [install]
-   trusted-host = mirrors.aliyun.com
+   cat > ~/.pip/pip.conf <<EOF
+[global]
+index-url = http://mirrors.aliyun.com/pypi/simple/
+[install]
+trusted-host = mirrors.aliyun.com
+EOF
  
    #安装依赖的包
  
