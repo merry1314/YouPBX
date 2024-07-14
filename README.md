@@ -3,7 +3,7 @@ A great GUI manager for FreeSwitch
 
 # 概述
 
-YouPBX 是一个强大 FreeSwitch (电话软交换系统) 的管理GUI系统，基于python2.7 + Django开发，功能全面，体验友好，可以基于此项目做一个完善的IPPBX系统、呼叫中心应用等
+YouPBX 是一个强大 FreeSwitch (电话软交换系统) 的管理GUI系统，基于python3.6 + Django开发，功能全面，体验友好，可以基于此项目做一个完善的IPPBX系统、呼叫中心应用等
 
 # 使用
 
@@ -20,11 +20,11 @@ EOF
 
 #安装依赖的包
  
-pip install pip==20.3.4
+pip3 install pip==20.3.4
  
-pip  install requests
+pip3  install requests
  
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 3. 项目界面框架用的 [DjangoX](https://github.com/JoneXiong/DjangoX), 请拷贝xadmin包到运行根目录
 ```bash
@@ -34,10 +34,10 @@ cp -rp Django/xadmin YouPBX/
 4. cp config_sample.py config.py 编辑配置freeswitch的连接信息
 5. 执行Django migrations命令 初始化数据库，执行Django createsuperuser创建管理员账号
 ```bash
-python manage.py migrate
-python manage.py createsuperuser
+python3 manage.py migrate
+python3 manage.py createsuperuser
 ```   
-6. python manage.py runserver 0.0.0.0:8080 运行服务
+6. python3 manage.py runserver 0.0.0.0:8080 运行服务
 7. 浏览 http://localhost:8080/
 
 
