@@ -26,19 +26,19 @@ EOF
  
    pip install -r requirements.txt
 ```
-4. 项目界面框架用的 [DjangoX](https://github.com/JoneXiong/DjangoX), 请拷贝xadmin包到运行根目录
+3. 项目界面框架用的 [DjangoX](https://github.com/JoneXiong/DjangoX), 请拷贝xadmin包到运行根目录
    ```bash
    git clone https://github.com/JoneXiong/DjangoX.git
    cp -rp Django/xadmin YouPBX/
    ```
-5. cp config_sample.py config.py 编辑配置freeswitch的连接信息
-6. 执行Django migrations命令 初始化数据库，执行Django createsuperuser创建管理员账号
+4. cp config_sample.py config.py 编辑配置freeswitch的连接信息
+5. 执行Django migrations命令 初始化数据库，执行Django createsuperuser创建管理员账号
 ```bash
    python manage.py migrate
    python manage.py createsuperuser
 ```   
-7. python manage.py runserver 0.0.0.0:8080 运行服务
-8. 浏览 http://localhost:8080/
+6. python manage.py runserver 0.0.0.0:8080 运行服务
+7. 浏览 http://localhost:8080/
 
 
 # 预览
